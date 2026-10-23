@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cursos | SESI + Indústria</title>
+  <meta name="description" content="Catálogo de cursos do SESI + Indústria. Pesquise e filtre por categoria, modalidade e status.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="banner">
+    <div class="topo">
+      <div class="container topo__barra">
+        <a class="topo__logo" href="index.html"><img src="img/logo-sesi-industria-white.svg" alt="SESI + Indústria, página inicial" width="188" height="19"></a>
+        <nav aria-label="Principal">
+          <div class="menu">
+            <a href="index.html">Início</a>
+            <a href="#cursos">Cursos</a>
+            <a href="#sobre">Sobre</a>
+            <a class="btn btn--contorno" href="#">Área do aluno</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="container banner__conteudo">
+      <h1>Impulsione sua carreira na indústria</h1>
+      <p>Amplie seus conhecimentos com excelência na melhor plataforma de estudos da indústria brasileira</p>
+      <a class="btn btn--branco" href="#cursos">Conhecer cursos
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="secao" aria-labelledby="titulo-principais">
+      <div class="container">
+        <div class="secao__cabecalho"><h2 id="titulo-principais">Principais cursos</h2></div>
+        <div id="carrossel-estado"></div>
+        <ul class="carrossel__faixa" id="carrossel-lista" tabindex="0" aria-label="Principais cursos, role para os lados para ver mais"></ul>
+        <div class="carrossel__controles">
+          <a class="btn btn--contorno" href="#cursos">Ver todos os cursos</a>
+          <div class="carrossel__setas">
+            <button class="seta" id="seta-anterior" type="button" aria-label="Cursos anteriores"><img src="img/icones/arrow-navigation.svg" alt=""></button>
+            <button class="seta" id="seta-proxima" type="button" aria-label="Próximos cursos"><img src="img/icones/arrow-navigation-1.svg" alt=""></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" id="cursos" aria-labelledby="titulo-catalogo" style="background: var(--fundo-suave);">
+      <div class="container">
+        <div class="secao__cabecalho">
+          <h2 id="titulo-catalogo">Todos os cursos</h2>
+          <p>Pesquise pelo nome do curso e combine com os filtros para encontrar o que combina com você.</p>
+        </div>
+
+        <form class="filtros" id="form-filtros" role="search" aria-label="Pesquisar e filtrar cursos">
+          <div class="campo campo--busca">
+            <label for="busca">Nome do curso</label>
+            <input id="busca" name="busca" type="search" placeholder="Ex.: estatística" autocomplete="off">
+          </div>
+          <div class="campo">
+            <label for="filtro-categoria">Categoria</label>
+            <select id="filtro-categoria" name="categoria"><option value="">Todas</option></select>
+          </div>
+          <div class="campo">
+            <label for="filtro-modalidade">Modalidade</label>
+            <select id="filtro-modalidade" name="modalidade"><option value="">Todas</option></select>
+          </div>
+          <div class="campo">
+            <label for="filtro-status">Status</label>
+            <select id="filtro-status" name="status"><option value="">Todos</option></select>
+          </div>
+          <button class="btn btn--contorno" id="limpar" type="button">Limpar filtros</button>
+        </form>
+
+        <div id="resultados" aria-busy="true">
+          <p class="contagem" id="contagem" role="status" aria-live="polite">Buscando cursos…</p>
+          <ul class="grade" id="grade"></ul>
+          <div id="estado"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape" id="sobre">
+    <div class="container">
+      <div class="rodape__linha">
+        <img class="logo" src="img/logo-sesi-industria-white.svg" alt="SESI + Indústria" width="188" height="19">
+        <ul class="rodape__social">
+          <li><a href="#" aria-label="Facebook"><img src="img/icones/icon-facebook-24px.svg" alt="" width="24" height="24"></a></li>
+          <li><a href="#" aria-label="Instagram"><img src="img/icones/icon-instagram-24px.svg" alt="" width="24" height="24"></a></li>
+          <li><a href="#" aria-label="LinkedIn"><img src="img/icones/icon-linkedIn-24px.svg" alt="" width="24" height="24"></a></li>
+        </ul>
+      </div>
+      <p>Aplicação desenvolvida como atividade prática de processo seletivo. Todos os cursos, textos e dados exibidos são fictícios.</p>
+    </div>
+  </footer>
+
+  <script src="js/comum.js"></script>
+  <script src="js/catalogo.js"></script>
+</body>
+</html>

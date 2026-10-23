@@ -35,17 +35,22 @@ namespace CatalogoCursos.Api.Migrations
                         new
                         {
                             Id = 1,
-                            Nome = "Tecnologia"
+                            Nome = "Matemática"
                         },
                         new
                         {
                             Id = 2,
-                            Nome = "Gestão"
+                            Nome = "Ciências da Natureza"
                         },
                         new
                         {
                             Id = 3,
-                            Nome = "Saúde e Segurança"
+                            Nome = "Linguagens"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Nome = "Sustentabilidade"
                         });
                 });
 
@@ -104,82 +109,110 @@ namespace CatalogoCursos.Api.Migrations
                             Id = 1,
                             CargaHoraria = 40,
                             CategoriaId = 1,
-                            DataDisponibilizacao = new DateTime(2026, 3, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Descricao = "Aprenda lógica de programação e os fundamentos do Python com exercícios práticos.",
-                            ImagemUrl = "/img/curso-1.svg",
+                            DataDisponibilizacao = new DateTime(2026, 1, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Descricao = "Aplicação de grandezas, proporções e escalas em processos de corte, furação e usinagem.",
+                            ImagemUrl = "img/metalurgia.jpg",
                             Modalidade = "Online",
-                            NomeBreve = "Python Básico",
-                            NomeCompleto = "Introdução à Programação com Python",
-                            PublicoAlvo = "Iniciantes em tecnologia",
-                            Status = "Disponível"
+                            NomeBreve = "Matemática na Metalurgia",
+                            NomeCompleto = "Matemática para a Precisão: Medidas e Escalas na Metalurgia",
+                            PublicoAlvo = "Estudantes e profissionais da área metalmecânica",
+                            Status = "Em andamento"
                         },
                         new
                         {
                             Id = 2,
                             CargaHoraria = 30,
                             CategoriaId = 1,
-                            DataDisponibilizacao = new DateTime(2026, 4, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Descricao = "Tabelas dinâmicas, fórmulas avançadas e dashboards para apoiar decisões.",
-                            ImagemUrl = "/img/curso-2.svg",
-                            Modalidade = "Online",
-                            NomeBreve = "Excel Avançado",
-                            NomeCompleto = "Excel Avançado para Análise de Dados",
-                            PublicoAlvo = "Profissionais administrativos",
-                            Status = "Disponível"
+                            DataDisponibilizacao = new DateTime(2026, 11, 9, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Descricao = "Explora formas geométricas, simetria e padrões matemáticos presentes em tecidos e estampas.",
+                            ImagemUrl = "img/textil.jpg",
+                            Modalidade = "Híbrido",
+                            NomeBreve = "Geometria no Design Têxtil",
+                            NomeCompleto = "Geometria e Modelagem no Design Têxtil",
+                            PublicoAlvo = "Estudantes de moda e design e profissionais da indústria têxtil",
+                            Status = "Inscrições abertas"
                         },
                         new
                         {
                             Id = 3,
                             CargaHoraria = 60,
-                            CategoriaId = 2,
-                            DataDisponibilizacao = new DateTime(2026, 11, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Descricao = "Scrum, Kanban e práticas ágeis para planejar e entregar projetos.",
-                            ImagemUrl = "/img/curso-3.svg",
-                            Modalidade = "Híbrido",
-                            NomeBreve = "Projetos Ágeis",
-                            NomeCompleto = "Gestão de Projetos Ágeis",
-                            PublicoAlvo = "Coordenadores e líderes de equipe",
-                            Status = "Em breve"
+                            CategoriaId = 1,
+                            DataDisponibilizacao = new DateTime(2026, 3, 16, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Descricao = "Leitura e interpretação de dados de controle de qualidade e produtividade.",
+                            ImagemUrl = "img/equipe.jpg",
+                            Modalidade = "Online",
+                            NomeBreve = "Estatística na Produção",
+                            NomeCompleto = "Estatística e Controle de Qualidade na Produção",
+                            PublicoAlvo = "Analistas e líderes de produção",
+                            Status = "Em andamento"
                         },
                         new
                         {
                             Id = 4,
-                            CargaHoraria = 24,
+                            CargaHoraria = 45,
                             CategoriaId = 2,
-                            DataDisponibilizacao = new DateTime(2026, 2, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Descricao = "Desenvolva comunicação clara, feedback e condução de equipes.",
-                            ImagemUrl = "/img/curso-4.svg",
+                            DataDisponibilizacao = new DateTime(2026, 11, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Descricao = "Estudo de forças, atrito, calor e energia em máquinas, fornos e prensas.",
+                            ImagemUrl = "img/metalurgia.jpg",
                             Modalidade = "Híbrido",
-                            NomeBreve = "Liderança",
-                            NomeCompleto = "Comunicação e Liderança",
-                            PublicoAlvo = "Gestores e futuros líderes",
-                            Status = "Disponível"
+                            NomeBreve = "Física na Metalurgia",
+                            NomeCompleto = "Física do Movimento e da Energia na Metalurgia",
+                            PublicoAlvo = "Operadores e técnicos de manutenção",
+                            Status = "Inscrições abertas"
                         },
                         new
                         {
                             Id = 5,
-                            CargaHoraria = 20,
-                            CategoriaId = 3,
-                            DataDisponibilizacao = new DateTime(2025, 8, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Descricao = "Normas, prevenção de acidentes e uso correto de equipamentos de proteção.",
-                            ImagemUrl = "/img/curso-5.svg",
-                            Modalidade = "Híbrido",
-                            NomeBreve = "Segurança do Trabalho",
-                            NomeCompleto = "Segurança do Trabalho na Prática",
-                            PublicoAlvo = "Colaboradores de áreas operacionais",
-                            Status = "Encerrado"
+                            CargaHoraria = 36,
+                            CategoriaId = 2,
+                            DataDisponibilizacao = new DateTime(2027, 2, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Descricao = "Estudo das reações envolvidas em tratamentos e acabamentos, com foco em reduzir resíduos.",
+                            ImagemUrl = "img/equipe.jpg",
+                            Modalidade = "Online",
+                            NomeBreve = "Química Sustentável",
+                            NomeCompleto = "Química Sustentável nos Processos de Acabamento",
+                            PublicoAlvo = "Técnicos e estudantes de química industrial",
+                            Status = "Em breve"
                         },
                         new
                         {
                             Id = 6,
-                            CargaHoraria = 16,
+                            CargaHoraria = 24,
                             CategoriaId = 3,
-                            Descricao = "Como agir em emergências até a chegada do atendimento especializado.",
-                            ImagemUrl = "/img/curso-6.svg",
+                            DataDisponibilizacao = new DateTime(2026, 11, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Descricao = "Prática de leitura, escrita e interpretação de manuais, ordens de serviço e relatórios.",
+                            ImagemUrl = "img/equipe.jpg",
                             Modalidade = "Online",
-                            NomeBreve = "Primeiros Socorros",
-                            NomeCompleto = "Primeiros Socorros no Ambiente de Trabalho",
-                            PublicoAlvo = "Todos os colaboradores",
+                            NomeBreve = "Comunicação Técnica",
+                            NomeCompleto = "Comunicação Técnica e Leitura de Manuais Industriais",
+                            PublicoAlvo = "Colaboradores de áreas operacionais e administrativas",
+                            Status = "Inscrições abertas"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            CargaHoraria = 20,
+                            CategoriaId = 4,
+                            DataDisponibilizacao = new DateTime(2025, 8, 18, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Descricao = "Como reduzir, reaproveitar e destinar resíduos industriais de forma responsável.",
+                            ImagemUrl = "img/textil.jpg",
+                            Modalidade = "Híbrido",
+                            NomeBreve = "Economia Circular",
+                            NomeCompleto = "Gestão de Resíduos e Economia Circular na Indústria",
+                            PublicoAlvo = "Gestores, supervisores e equipes de meio ambiente",
+                            Status = "Encerrado"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            CargaHoraria = 50,
+                            CategoriaId = 3,
+                            Descricao = "Vocabulário e expressões em inglês para manuais, normas e comunicação com fornecedores.",
+                            ImagemUrl = "img/textil.jpg",
+                            Modalidade = "Online",
+                            NomeBreve = "Inglês Técnico",
+                            NomeCompleto = "Inglês Técnico para a Indústria",
+                            PublicoAlvo = "Profissionais que lidam com equipamentos e documentação importados",
                             Status = "Em breve"
                         });
                 });
@@ -212,85 +245,169 @@ namespace CatalogoCursos.Api.Migrations
                         {
                             Id = 1,
                             CursoId = 1,
-                            Descricao = "Variáveis, condições e repetições.",
-                            Titulo = "Lógica de programação"
+                            Descricao = "Sistema métrico, conversões e leitura de paquímetro e micrômetro.",
+                            Titulo = "Grandezas e unidades"
                         },
                         new
                         {
                             Id = 2,
                             CursoId = 1,
-                            Descricao = "Funções, listas e pequenos projetos.",
-                            Titulo = "Python na prática"
+                            Descricao = "Ampliação e redução em desenhos técnicos de peças.",
+                            Titulo = "Proporção e escala"
                         },
                         new
                         {
                             Id = 3,
-                            CursoId = 2,
-                            Descricao = "PROCV, ÍNDICE/CORRESP e funções lógicas.",
-                            Titulo = "Fórmulas avançadas"
+                            CursoId = 1,
+                            Descricao = "Velocidade de corte, avanço e tolerâncias na prática.",
+                            Titulo = "Cálculos de usinagem"
                         },
                         new
                         {
                             Id = 4,
                             CursoId = 2,
-                            Descricao = "Tabelas dinâmicas e gráficos interativos.",
-                            Titulo = "Dashboards"
+                            Descricao = "Figuras planas, rotações e reflexões em padrões de tecidos.",
+                            Titulo = "Formas e simetrias"
                         },
                         new
                         {
                             Id = 5,
-                            CursoId = 3,
-                            Descricao = "Valores, princípios e papéis no Scrum.",
-                            Titulo = "Fundamentos ágeis"
+                            CursoId = 2,
+                            Descricao = "Repetição de módulos e encaixe de estampas em tecidos.",
+                            Titulo = "Modelagem de estampas"
                         },
                         new
                         {
                             Id = 6,
-                            CursoId = 3,
-                            Descricao = "Planejamento, reuniões e fluxo de trabalho.",
-                            Titulo = "Cerimônias e Kanban"
+                            CursoId = 2,
+                            Descricao = "Cálculo de áreas e aproveitamento de tecido.",
+                            Titulo = "Medidas e moldes"
                         },
                         new
                         {
                             Id = 7,
-                            CursoId = 4,
-                            Descricao = "Escuta ativa e clareza na mensagem.",
-                            Titulo = "Comunicação eficaz"
+                            CursoId = 3,
+                            Descricao = "Planilhas, amostragem e registro de medições da linha.",
+                            Titulo = "Coleta e organização de dados"
                         },
                         new
                         {
                             Id = 8,
-                            CursoId = 4,
-                            Descricao = "Como dar e receber feedback.",
-                            Titulo = "Feedback e liderança"
+                            CursoId = 3,
+                            Descricao = "Média, desvio padrão e limites de controle.",
+                            Titulo = "Gráficos de controle"
                         },
                         new
                         {
                             Id = 9,
-                            CursoId = 5,
-                            Descricao = "Principais normas e identificação de riscos.",
-                            Titulo = "Normas e riscos"
+                            CursoId = 3,
+                            Descricao = "Como usar os números para reduzir perdas e retrabalho.",
+                            Titulo = "Melhoria contínua"
                         },
                         new
                         {
                             Id = 10,
-                            CursoId = 5,
-                            Descricao = "EPIs e procedimentos seguros.",
-                            Titulo = "Prevenção na prática"
+                            CursoId = 4,
+                            Descricao = "Leis de Newton aplicadas a prensas e esteiras.",
+                            Titulo = "Forças e movimento"
                         },
                         new
                         {
                             Id = 11,
-                            CursoId = 6,
-                            Descricao = "Como avaliar a cena e pedir ajuda.",
-                            Titulo = "Avaliação da situação"
+                            CursoId = 4,
+                            Descricao = "Lubrificação, perdas de energia e vida útil de peças.",
+                            Titulo = "Atrito e desgaste"
                         },
                         new
                         {
                             Id = 12,
+                            CursoId = 4,
+                            Descricao = "Troca de calor em fornos e eficiência energética.",
+                            Titulo = "Calor e energia"
+                        },
+                        new
+                        {
+                            Id = 13,
+                            CursoId = 5,
+                            Descricao = "Reações comuns em tratamentos de superfície.",
+                            Titulo = "Reações e materiais"
+                        },
+                        new
+                        {
+                            Id = 14,
+                            CursoId = 5,
+                            Descricao = "Alternativas com menor impacto ambiental.",
+                            Titulo = "Acabamentos mais limpos"
+                        },
+                        new
+                        {
+                            Id = 15,
+                            CursoId = 5,
+                            Descricao = "Rótulos, fichas de segurança e descarte correto.",
+                            Titulo = "Segurança no manuseio"
+                        },
+                        new
+                        {
+                            Id = 16,
                             CursoId = 6,
-                            Descricao = "Ações iniciais em emergências comuns.",
-                            Titulo = "Técnicas básicas"
+                            Descricao = "Estrutura de manuais, símbolos e avisos de segurança.",
+                            Titulo = "Lendo manuais"
+                        },
+                        new
+                        {
+                            Id = 17,
+                            CursoId = 6,
+                            Descricao = "Ordens de serviço e relatórios curtos e objetivos.",
+                            Titulo = "Escrevendo com clareza"
+                        },
+                        new
+                        {
+                            Id = 18,
+                            CursoId = 6,
+                            Descricao = "Passagem de turno e registro de ocorrências.",
+                            Titulo = "Comunicação na equipe"
+                        },
+                        new
+                        {
+                            Id = 19,
+                            CursoId = 7,
+                            Descricao = "Classificação e armazenamento seguro.",
+                            Titulo = "Tipos de resíduos"
+                        },
+                        new
+                        {
+                            Id = 20,
+                            CursoId = 7,
+                            Descricao = "Reúso, reciclagem e logística reversa.",
+                            Titulo = "Reaproveitamento"
+                        },
+                        new
+                        {
+                            Id = 21,
+                            CursoId = 7,
+                            Descricao = "Como medir e acompanhar resultados.",
+                            Titulo = "Indicadores ambientais"
+                        },
+                        new
+                        {
+                            Id = 22,
+                            CursoId = 8,
+                            Descricao = "Termos de peças, ferramentas e processos.",
+                            Titulo = "Vocabulário de máquinas"
+                        },
+                        new
+                        {
+                            Id = 23,
+                            CursoId = 8,
+                            Descricao = "Estratégias para entender textos técnicos em inglês.",
+                            Titulo = "Lendo normas e manuais"
+                        },
+                        new
+                        {
+                            Id = 24,
+                            CursoId = 8,
+                            Descricao = "Frases úteis para contato com fornecedores.",
+                            Titulo = "E-mails e chamadas"
                         });
                 });
 

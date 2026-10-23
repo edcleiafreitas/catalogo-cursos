@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Curso | SESI + Indústria</title>
+  <meta name="description" content="Detalhes do curso: conteúdo, carga horária, público-alvo e modalidade.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topo">
+    <div class="container topo__barra">
+      <a class="topo__logo" href="index.html"><img src="img/logo-sesi-industria-primary.svg" alt="SESI + Indústria, página inicial" width="188" height="19"></a>
+      <nav aria-label="Principal">
+        <div class="menu">
+          <a href="index.html">Início</a>
+          <a href="index.html#cursos">Cursos</a>
+          <a href="index.html#sobre">Sobre</a>
+          <a class="btn btn--contorno" href="#">Área do aluno</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo" aria-live="polite">
+    <div class="container secao" id="estado"></div>
+
+    <article id="curso" hidden>
+      <div class="container curso-topo">
+        <div>
+          <span id="chip"></span>
+          <h1 id="titulo"></h1>
+          <ul class="dados-rapidos">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>
+              <span>Início do curso: <strong id="inicio"></strong></span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="9" r="5.5"/><path d="M8.5 13.5 7 21l5-2.6 5 2.6-1.5-7.5"/></svg>
+              <span>Certificação: <strong>SESI</strong></span>
+            </li>
+          </ul>
+          <button class="btn btn--preto" type="button" data-matricula>Matricule-se
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg>
+          </button>
+        </div>
+        <div class="midia">
+          <img src="img/equipe-grande.jpg" alt="Dois profissionais da indústria conversando diante de uma máquina, imagem ilustrativa do curso" width="1200" height="675">
+          <span class="midia__play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 4.5v15l12-7.5z" fill="#0C0C0D"/></svg></span>
+        </div>
+      </div>
+
+      <div class="container">
+        <ul class="destaques" aria-label="Diferenciais do curso">
+          <li class="destaque"><img src="img/icones/01-certificacao-bege.svg" alt="" width="48" height="48"><h3>Certificação SESI</h3><p>Certificado ao concluir o curso.</p></li>
+          <li class="destaque"><img src="img/icones/02-professores-bege.svg" alt="" width="48" height="48"><h3>Professores especialistas</h3><p>Aulas com profissionais da indústria.</p></li>
+          <li class="destaque"><img src="img/icones/03-suporte-bege.svg" alt="" width="48" height="48"><h3>Suporte ao aluno</h3><p>Tire dúvidas durante todo o curso.</p></li>
+          <li class="destaque"><img src="img/icones/04-flexibilidade-bege.svg" alt="" width="48" height="48"><h3>Flexibilidade</h3><p>Estude no seu ritmo, onde estiver.</p></li>
+        </ul>
+
+        <div class="conteudo-curso">
+          <div>
+            <h2>Sobre o curso</h2>
+            <p class="texto" id="descricao"></p>
+            <h2>Conteúdo do curso</h2>
+            <div class="modulos" id="modulos"></div>
+          </div>
+          <dl class="ficha" aria-label="Informações do curso" id="ficha"></dl>
+        </div>
+      </div>
+
+      <div class="barra-matricula">
+        <strong id="titulo-barra"></strong>
+        <button class="btn btn--branco" type="button" data-matricula>Matricule-se
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg>
+        </button>
+      </div>
+    </article>
+    <p class="aviso" id="aviso" role="status" hidden></p>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <div class="rodape__linha">
+        <img class="logo" src="img/logo-sesi-industria-white.svg" alt="SESI + Indústria" width="188" height="19">
+      </div>
+      <p>Aplicação desenvolvida como atividade prática de processo seletivo. Todos os cursos, textos e dados exibidos são fictícios.</p>
+    </div>
+  </footer>
+
+  <script src="js/comum.js"></script>
+  <script src="js/curso.js"></script>
+</body>
+</html>
