@@ -480,3 +480,10 @@ $RECYCLE.BIN/
 
 # Vim temporary swap files
 *.swp
+
+front-end-catalogo/
+front-end-catalogo.zip
+git/
+*.db
+*.db-shm
+*.db-wal
