@@ -1,4 +1,3 @@
-@'
 FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
 WORKDIR /src
 COPY *.csproj ./
@@ -11,4 +10,3 @@ WORKDIR /app
 COPY --from=build /app/publish .
 ENV ASPNETCORE_ENVIRONMENT=Production
 ENTRYPOINT ["sh", "-c", "ASPNETCORE_URLS=http://0.0.0.0:${PORT:-8080} dotnet CatalogoCursos.Api.dll"]
-'@ | Set-Content -Encoding ascii backend\Dockerfile
